@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Problemas de Computadora</title>
+  
+</head>
+<body>
+  <div class="container mt-4">
+    <h2>Registro Problemas de Computadora</h2>
+
+    <div class="form-group">
+      <label for="computerName">Nombre de la PC:</label>
+      <input type="text" class="form-control" id="computerName">
+    </div>
+
+    <div class="form-group">
+      <label for="problemDescription">Descripción del Problema:</label>
+      <input type="text" class="form-control" id="problemDescription">
+    </div>
+
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="resolvedCheckbox">
+      <label class="form-check-label" for="resolvedCheckbox">¿Resuelto?</label>
+    </div>
+
+    <button class="btn btn-primary mt-2" onclick="agregarProblema()">Agregar Problema</button>
+
+    <div class="mt-4">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre de la PC</th>
+            <th scope="col">Problema</th>
+            <th scope="col">Estado</th>
+          </tr>
+        </thead>
+        <tbody id="problemBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
